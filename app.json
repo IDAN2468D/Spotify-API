@@ -3,6 +3,7 @@
     "name": "Spotify",
     "slug": "Spotify",
     "version": "1.0.0",
+    "scheme": "exp://192.168.1.190:19000/--/spotify-auth-callback",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -19,12 +20,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/ic_launcher.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.kazam11.Spotify"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ba6d8c5f-3202-45dc-8dc3-056328105889"
+      }
     }
   }
 }
